@@ -239,7 +239,7 @@
                     <LinearLayout
                         android:id="@+id/featured_background"
                         android:layout_width="155dp"
-                        android:layout_height="292dp"
+                        android:layout_height="300dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:background="@color/banner_background"
@@ -270,7 +270,7 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/featured_recycle"
                         android:layout_width="212dp"
-                        android:layout_height="300dp"
+                        android:layout_height="330dp"
                         android:layout_marginLeft="13dp"
                         android:layout_toRightOf="@id/featured_background"
                         android:background="@color/home_background" />
@@ -278,6 +278,7 @@
                 </RelativeLayout>
 
                 <LinearLayout
+                    android:id="@+id/most_viewed_recycler_background"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
@@ -291,28 +292,27 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
                             android:fontFamily="@font/oswald_normal"
                             android:text="@string/masVistos"
                             android:textAllCaps="true"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
 
-                        <TextView
+                        <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
+                            android:layout_marginStart="217dp"
+                            android:backgroundTint="@color/home_background"
+                            android:drawableBottom="@color/home_background"
+                            android:stateListAnimator="@null"
                             android:text="@string/view_all"
-                            android:textColor="@color/black" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="80dp"
-                            android:text="Próximamente"
-                            android:fontFamily="@font/oswald_normal"
-                            android:textColor="@color/grey1"
-                            android:textSize="40dp"/>
+                            android:textColor="@color/black"
+                            app:icon="@color/banner_background_light"
+                            app:iconTint="@color/banner_background_light"
+                            app:rippleColor="@color/banner_background_light" />
 
 
                     </RelativeLayout>
@@ -320,9 +320,8 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/most_viewed_recycler"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_toRightOf="@id/featured_background" />
-
+                        android:layout_height="214dp"
+                        android:layout_toRightOf="@id/most_viewed_recycler_background" />
 
                 </LinearLayout>
 

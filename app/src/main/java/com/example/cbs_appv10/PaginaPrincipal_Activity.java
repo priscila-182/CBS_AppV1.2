@@ -108,14 +108,11 @@ public class PaginaPrincipal_Activity extends AppCompatActivity implements Navig
         ArrayList<MostViewedCardDesignHelpedClass> mostViewedCardDesignLocations = new ArrayList<>();
 
         mostViewedCardDesignLocations.add(new MostViewedCardDesignHelpedClass(R.drawable.soy_leyenda_portada1, "Soy Legenda", "Robert Neville es el único sobreviviente en un planeta asolado...", "Autor: Richard Matheson", "Género: Ciencia Ficción"));
-        mostViewedCardDesignLocations.add(new MostViewedCardDesignHelpedClass(R.drawable.de_sangre_y_cenizas_portada2, "De Sangre y Cenizas", "Una Doncella elegida desde su nacimiento para comenzar una nueva era...", "Jennifer L. Armentrout", "Fantasía"));
-        mostViewedCardDesignLocations.add(new MostViewedCardDesignHelpedClass(R.drawable.el_resplandor_portada3, "El resplandor", "Jack Torrance acepta una oferta de trabajo en un hotel de montaña que se encuentra a 65 kilómetros del...", "Stephen King", "Horror"));
-        mostViewedCardDesignLocations.add(new MostViewedCardDesignHelpedClass(R.drawable.cumbres_borrascosas_portada4, "Cumbres Borrascosas", "Cumbres borrascosas constituye una asombrosa visión metafísica del destino, la obsesión, la pasión y la venganza...", "Emily Bronte", "Romance"));
+        mostViewedCardDesignLocations.add(new MostViewedCardDesignHelpedClass(R.drawable.cumbres_borrascosas_portada4, "Cumbres Borrascosas", "Cumbres borrascosas constituye una asombrosa visión metafísica del destino, la obsesión, la pasión y la venganza...", "Autor: Emily Bronte", "Género: Romance"));
+        mostViewedCardDesignLocations.add(new MostViewedCardDesignHelpedClass(R.drawable.la_chica_del_tren_portada4, "La Chica del Tren", "Rachel Watson se divorcia del marido que la engaña y se siente sola y deprimida. No tiene trabajo y...", "Autor: Paula Hawkins", "Género: Thriller"));
 
         adapter = new MostViewedCardDesignAdapter(mostViewedCardDesignLocations);
         mostViewedRecycle.setAdapter(adapter);
-
-        GradientDrawable gradient1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffeff400, 0xffaff600});
     }
 
     private void featuredRecycler() {
@@ -126,9 +123,10 @@ public class PaginaPrincipal_Activity extends AppCompatActivity implements Navig
         ArrayList<FeaturedHelpedClass> featuredLocations = new ArrayList<>();
 
         featuredLocations.add(new FeaturedHelpedClass(R.drawable.soy_leyenda_portada1, "Soy Legenda", "Robert Neville es el único sobreviviente en un planeta asolado...", "Autor: Richard Matheson", "Género: Ciencia Ficción"));
-        featuredLocations.add(new FeaturedHelpedClass(R.drawable.de_sangre_y_cenizas_portada2, "De Sangre y Cenizas", "Una Doncella elegida desde su nacimiento para comenzar una nueva era...", "Jennifer L. Armentrout", "Fantasía"));
-        featuredLocations.add(new FeaturedHelpedClass(R.drawable.el_resplandor_portada3, "El resplandor", "Jack Torrance acepta una oferta de trabajo en un hotel de montaña que se encuentra a 65 kilómetros del...", "Stephen King", "Horror"));
-        featuredLocations.add(new FeaturedHelpedClass(R.drawable.cumbres_borrascosas_portada4, "Cumbres Borrascosas", "Cumbres borrascosas constituye una asombrosa visión metafísica del destino, la obsesión, la pasión y la venganza...", "Emily Bronte", "Romance"));
+        featuredLocations.add(new FeaturedHelpedClass(R.drawable.de_sangre_y_cenizas_portada2, "De Sangre y Cenizas", "Una Doncella elegida desde su nacimiento para comenzar una nueva era...", "Jennifer L. Armentrout", "Género: Fantasía"));
+        featuredLocations.add(new FeaturedHelpedClass(R.drawable.el_resplandor_portada3, "El resplandor", "Jack Torrance acepta una oferta de trabajo en un hotel de montaña que se encuentra a 65 kilómetros del...", "Stephen King", "Género: Horror"));
+        featuredLocations.add(new FeaturedHelpedClass(R.drawable.cumbres_borrascosas_portada4, "Cumbres Borrascosas", "Cumbres borrascosas constituye una asombrosa visión metafísica del destino, la obsesión, la pasión y la venganza...", "Emily Bronte", "Género: Romance"));
+        featuredLocations.add(new FeaturedHelpedClass(R.drawable.la_chica_del_tren_portada4, "La Chica del Tren", "Rachel Watson se divorcia del marido que la engaña y se siente sola y deprimida. No tiene trabajo y...", "Autor: Paula Hawkins", "Género: Thriller"));
 
         adapter = new FeaturedAdapter(featuredLocations);
         featuredRecycler.setAdapter(adapter);
